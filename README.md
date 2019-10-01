@@ -2,6 +2,8 @@
 
 ![Certification Image](https://d1.awsstatic.com/Train%20&%20Cert/Certification%20Page%20Images/AWS-Certification-Current-Roadmap-May2019.36b629c3b9be6da400a13e6cf1a4f9f4ef680f70.png)
 
+![](https://d1.awsstatic.com/Train%20&%20Cert/Learning%20Paths/path_cloud-practitioner.f6af19450cdb7da0f040c48e2804592b2d959c9b.png)
+
 ## 방법
 
 1. 매주 [AWS Cloud Practitioner Essentials](https://www.aws.training/Details/Curriculum?id=27076) 과정 진행
