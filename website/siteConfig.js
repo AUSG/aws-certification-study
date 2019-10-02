@@ -23,15 +23,15 @@ const users = [
 const siteConfig = {
   title: 'AWS Certification Study', // Title for your website.
   tagline: 'AUSG의 AWS 자격증 스터디',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://AUSG.github.io', // Your website URL
+  baseUrl: '/aws-certification-study/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
   facebookAppId: "ausgkr",
 
   // Used for publishing and more
-  projectName: 'test-site',
+  projectName: 'aws-certification-study',
   organizationName: 'AUSG',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
