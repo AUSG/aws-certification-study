@@ -1,10 +1,12 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "AWS Cloud Practitioner": [
+      "doc1",
+      {
+        "type": "subcategory",
+        "label": "2강 Introduction to the AWS Cloud",
+        "ids": ["2강/doc2", "2강/doc3", "2강/doc4"]
+      }
+    ]
   }
 }
