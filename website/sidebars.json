@@ -1,0 +1,12 @@
+{
+  "docs": {
+    "AWS Cloud Practitioner": [
+      "doc1",
+      {
+        "type": "subcategory",
+        "label": "2강 Introduction to the AWS Cloud",
+        "ids": ["2강/doc2", "2강/doc3", "2강/doc4"]
+      }
+    ]
+  }
+}
