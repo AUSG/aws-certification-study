@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>AWS 인터페이스 소개 · AWS Certification Study</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="AWS 관리 인터페이스에 대한 소개를 시작하겠습니다. 이 모듈에서는 AWS 리소스에 액세스하고 사용하기 위한 편리한 옵션에 대해 알아봅니다."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="AWS 인터페이스 소개 · AWS Certification Study"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/"/><meta property="og:description" content="AWS 관리 인터페이스에 대한 소개를 시작하겠습니다. 이 모듈에서는 AWS 리소스에 액세스하고 사용하기 위한 편리한 옵션에 대해 알아봅니다."/><meta property="og:image" content="https://your-docusaurus-test-site.com/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/ausg logo.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ausg logo.png" alt="AWS Certification Study"/><h2 class="headerTitleWithLogo">AWS Certification Study</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/doc1" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>2강 Introduction to the AWS Cloud</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">AWS Cloud Practitioner</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc1">소개</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">2강 Introduction to the AWS Cloud</h4><ul><li class="navListItem"><a class="navItem" href="/docs/2강/doc2">모듈 소개</a></li><li class="navListItem"><a class="navItem" href="/docs/2강/doc3">AWS 클라우드 소개</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/2강/doc4">AWS 인터페이스 소개</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">AWS 인터페이스 소개</h1></header><article><div><span><p>AWS 관리 인터페이스에 대한 소개를 시작하겠습니다. 이 모듈에서는 AWS 리소스에 액세스하고 사용하기 위한 편리한 옵션에 대해 알아봅니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="세-가지-인터페이스"></a><a href="#세-가지-인터페이스" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>세 가지 인터페이스</h2>
+<p>AWS 사용자는 세 가지 방법을 사용하여 리소스를 만들고 관리할 수 있습니다.</p>
+<ul>
+<li>AWS Management Console</li>
+<li>AWS 명령줄 인터페이스 (AWS CLI)</li>
+<li>AWS 소프트웨어 개발 키트(SDK)</li>
+</ul>
+<p>이 세 가지 옵션은 AWS의 기초가 되는 공통 인터페이스 또는 API를 기반으로 합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="aws-management-console"></a><a href="#aws-management-console" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AWS Management Console</h3>
+<p><strong>AWS Management Console</strong>은 AWS 기능에 액세스할 수 있는 그래픽 인터페이스를 제공합니다. AWS CLI를 사용하면 명령줄에서 AWS 서비스를 제어할 수 있습니다. 또한 AWS는 다양한 인기 프로그래밍 언어를 사용하여 AWS에 액세스할 수 있는 SDK를 제공합니다. 이제 이러한 옵션을 사용하는 방법을 알아보기 전에 도구에 대해 간단히 살펴보겠습니다.</p>
+<p>AWS Management Console을 통해 다양한 AWS 서비스 및 기능을 열고 사용할 수 있습니다. iOS 또는 Android 플랫폼에서 사용할 수 있는 앱도 있으므로 기존 리소스 및 경보를 보고 편리하게 운영 작업을 수행할 수 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="aws-cli"></a><a href="#aws-cli" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AWS CLI</h3>
+<p><strong>AWS CLI</strong>를 통해 언어에 관계없는 프로그래밍 방식으로 AWS 리소스 배포를 자동화하고 반복할 수 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="aws-sdk"></a><a href="#aws-sdk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AWS SDK</h3>
+<p><strong>AWS SDK</strong>가 기존 애플리케이션에 AWS를 사용할 수 있는 위치에서 코드만 사용하여 복잡한 시스템을 배포하고 모니터링할 수 있는 애플리케이션을 생성합니다. AWS CLI 및 SDK를 사용하면 AWS 기능을 사용자 지정하고 비즈니스와 관련된 고유 도구를 유연하게 생성할 수 있습니다.</p>
+<p>이 세 가지 모드를 모두 교대로 사용할 수 있습니다. 각 모드는 배타적이지 않습니다. 예를 들어, SDK 호출을 사용하여 Amazon EC2 인스턴스를 생성한 다음, 이를 확인하고, AWS CLI를 사용하여 나중에 콘솔에서 단 몇 번의 클릭만으로 종료할 수 있습니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="콘솔에-대한-설명"></a><a href="#콘솔에-대한-설명" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>콘솔에 대한 설명</h2>
+<p>이제 콘솔을 시작으로 각 도구를 살펴보겠습니다.</p>
+<p>콘솔을 사용하면 월간 비용 모니터링, 보안 자격 증명 관리는 물론 신규 사용자 설정까지 AWS 계정과 관련한 모든 일을 클라우드에서 관리할 수 있습니다. 서비스를 찾고 열 수 있는 여러 가지 방법이 제공됩니다. 콘솔 홈 페이지에서 필요한 서비스를 검색하거나 최근에 방문한 서비스를 선택하거나 &quot;All services&quot; 섹션을 확장하여 모든 AWS 서비스를 검색할 수 있습니다. 서비스 옵션은 항상 상단 탐색 모음에 표시되므로 언제든지 필요한 서비스를 검색할 수 있습니다. 또한 서비스를 그룹별로 나열하거나 알파벳 순으로 정렬할 수 있습니다. 가장 자주 방문하는 서비스에 대한 바로 가기를 생성하여 콘솔 환경을 개인화할 수 있습니다.</p>
+<p><strong>핀 아이콘</strong>으로 서비스 링크를 도구 모음에 바로 드래그 앤 드롭할 수 있습니다.</p>
+<p><strong>리소스 그룹</strong>을 사용하여 콘솔 사용을 간소화할 수 있습니다. 각 애플리케이션, 서비스, 자주 사용하는 관련 리소스 모음에 대한 리소스 그룹을 만들 수 있습니다. 그런 다음 “AWS” 메뉴를 사용하면 저장되어 있는 각 리소스 그룹으로 빠르게 이동할 수 있습니다. 리소스 그룹은 각 자격 증명에 고유하기 때문에 계정의 각 사용자가 각자 자주 액세스하는 리소스 및 일반 작업에 대해 고유한 리소스 그룹을 생성할 수 있습니다. 이러한 리소스 그룹 정의는 URL을 사용하는 동일한 계정의 다른 사용자와 공유할 수 있습니다.</p>
+<p><strong>Tag Editor</strong>를 사용하여 태그를 지원하는 모든 리소스 유형에 대해 태그를 쉽게 관리할 수 있습니다. 이러한 태그 키 및 값을 한 번에 여러 리소스에 적용할 수 있습니다. Tag Editor는 전역 태그 검색 및 및 대량 편집을 지원하기 때문에 클릭 몇 번으로 특정 태그가 지정된 모든 리소스를 찾거나 여러 리소스에서 태그를 변경하기가 쉽습니다. 콘솔에서 유용한 리소스에 액세스하여 AWS 서비스 및 기능에 대해 알아볼 수 있습니다. 솔루션 구축을 시작할 수 있습니다.</p>
+<p><strong>&quot;Build a solution&quot; 섹션</strong>에서는 원하는 솔루션에 필요한 리소스를 생성할 수 있도록 여러 가지 자동화된 마법사와 워크플로를 제공합니다.</p>
+<p><strong>&quot;Learn to build&quot; 섹션</strong>에는 솔루션 유형 및 사용 사례별로 구성된 학습 리소스가 포함됩니다. 이러한 리소스에는 자습서, 동영상, 자습형 실습, 프로젝트 안내서 등이 있고, 물론 설명서도 포함됩니다.</p>
+<p><strong>원격 디바이스를 사용하여 원격으로 콘솔에 액세스</strong>하려면 Amazon App Store, Google Play 또는 iTunes에서 모바일 앱을 다운로드하기만 하면 됩니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="다른-인터페이스cli-sdk"></a><a href="#다른-인터페이스cli-sdk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다른 인터페이스(CLI/SDK)</h2>
+<p>다른 인터페이스를 사용하여 변경된 일부 사항은 콘솔에서 업데이트하고 표시하는 데 시간이 걸릴 수 있습니다. 예를 들어 CLI를 사용하여 기능을 변경한 경우 처음 시작할 때 콘솔에서 쉽게 볼 수 없는 경우가 있습니다. AWS CLI는 복잡한 구성 없이 AWS 서비스와 상호 작용할 수 있는 오픈 소스 도구입니다. Windows, Linux, macOS 또는 Unix 명령 실행을 포함하여 명령줄에서 AWS의 모든 기능을 사용할 수 있습니다. 이 과정의 뒷부분에서 이러한 기능을 수행하는 방법을 더 자세히 알아보겠습니다.</p>
+<p>AWS SDK 및 지원 인터페이스를 사용하면 AWS를 기반으로 하는 애플리케이션에서 코드형 인프라를 관리할 수 있습니다. 코드형 인프라 개념은 강력하고 파괴적이며 클라우드를 이전의 IT 세계와 차별화합니다. 이러한 언어별 SDK에는 어렵게 함수를 작성할 필요 없이 다양한 AWS 클라우드 서비스의 기능 및 연결을 코드에 쉽게 통합할 수 있는 API가 포함되어 있습니다.</p>
+<p>AWS는 시작 안내서, 개발자 가이드, API 참조, 커뮤니티 포럼 및 블로그 등 SDK에 대한 광범위한 리소스를 제공합니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="결론"></a><a href="#결론" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>결론</h2>
+<p>이제 앞서 다룬 내용을 요약하면서 마무리하겠습니다. AWS는 플랫폼에서 AWS 리소스를 생성하고 관리하는 세 가지 방법을 제공합니다. 콘솔, AWS CLI 및 SDK. 이들은 모두 AWS API를 참조합니다. 이동 중에도 여러 인터페이스를 통해 유연하게 자체 리소스를 생성하고 액세스할 수 있습니다. 작업을 완료하는 데 필요한 요소가 수중에 있는 것입니다.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/2강/doc3"><span class="arrow-prev">← </span><span>AWS 클라우드 소개</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#세-가지-인터페이스">세 가지 인터페이스</a><ul class="toc-headings"><li><a href="#aws-management-console">AWS Management Console</a></li><li><a href="#aws-cli">AWS CLI</a></li><li><a href="#aws-sdk">AWS SDK</a></li></ul></li><li><a href="#콘솔에-대한-설명">콘솔에 대한 설명</a></li><li><a href="#다른-인터페이스cli-sdk">다른 인터페이스(CLI/SDK)</a></li><li><a href="#결론">결론</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ausg logo.png" alt="AWS Certification Study" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/ausg/aws-certification-study">GitHub</a><a class="github-button" href="https://github.com/ausg/aws-certification-study" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><div class="fb-like" data-href="https://your-docusaurus-test-site.com" data-colorscheme="dark" data-layout="standard" data-share="true" data-width="225" data-show-faces="false"></div></div></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 @ausg</section></footer></div><script>window.fbAsyncInit = function() {FB.init({appId:'ausgkr',xfbml:true,version:'v2.7'});};(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = '//connect.facebook.net/en_US/sdk.js';fjs.parentNode.insertBefore(js, fjs);}(document, 'script','facebook-jssdk'));
+                </script></body></html>
