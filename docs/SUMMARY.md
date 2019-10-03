@@ -10,3 +10,4 @@ sidebar_label: 소개
 
 - [진의](https://www.notion.so/tinyjin/Introduction-to-the-AWS-Cloud-8ac30fff9a0f452597bf6ac789c60145)
 - [준석](./2강/aws_cp_ch2.md)
+- [서현](https://drive.google.com/file/d/1un9OrEqry5ycKNP1R4qlj_v7lIGxWh_O/view?usp=sharing)
