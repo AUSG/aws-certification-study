@@ -12,3 +12,6 @@ sidebar_label: 소개
 - [준석](./2강/aws_cp_ch2.md)
 - [서현](https://drive.google.com/file/d/1un9OrEqry5ycKNP1R4qlj_v7lIGxWh_O/view?usp=sharing)
 - [동선](https://www.notion.so/dongsundev/Cloud-study-b5a3289524594e4890996b839aaf5bcf)
+
+## 3강 AWS Core Services(45분)
+- [동선](https://www.notion.so/dongsundev/Cloud-study-3-533391a0f789413bb1a3f9db4e179234)
