@@ -1,16 +1,12 @@
 # Ch3 : AWS Core Services
 
-
-* [Module Introduction](#Moudule-Introduction)
-
-- [Ch3 : AWS Core Services](#ch3--aws-core-services)
-    - [Module Introduction](#module-introduction)
-    - [Amazon Elastic Cloud Compute (EC2)](#amazon-elastic-cloud-compute-ec2)
-    - [Amazon Elastic Block Store (EBS)](#amazon-elastic-block-store-ebs)
-    - [Amazon Simple Storage Services (S3)](#amazon-simple-storage-services-s3)
-    - [AWS Global Infrastructure](#aws-global-infrastructure)
-    - [Amazon Visual Private Cloud (VPC)](#amazon-visual-private-cloud-vpc)
-    - [Security Groups](#security-groups)
+  - [Module Introduction](#module-introduction)
+  - [Amazon Elastic Cloud Compute (EC2)](#amazon-elastic-cloud-compute-ec2)
+  - [Amazon Elastic Block Store (EBS)](#amazon-elastic-block-store-ebs)
+  - [Amazon Simple Storage Services (S3)](#amazon-simple-storage-services-s3)
+  - [AWS Global Infrastructure](#aws-global-infrastructure)
+  - [Amazon Visual Private Cloud (VPC)](#amazon-visual-private-cloud-vpc)
+  - [Security Groups](#security-groups)
 
 
 ### Module Introduction
