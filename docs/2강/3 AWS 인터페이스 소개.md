@@ -1,5 +1,5 @@
 ---
-id: doc4
+id: script3
 title: AWS 인터페이스 소개
 ---
 

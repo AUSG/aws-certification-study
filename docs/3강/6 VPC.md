@@ -1,9 +1,7 @@
 ---
-id: doc7
+id: script6
 title: Virtual Private Cloud(VPC)
 ---
-
-## Virtual Private Cloud(VPC)
 
 안녕하십니까. 저는 Kent Rademacher이고, 이번 모듈의 강사입니다. 현재 AWS의 선임 기술 강사이고, AWS의 아키텍팅과 AWS의 시스템 운영을 가르치고 있습니다. 이 모듈에서는 Amazon Virtual Private Cloud(VPC)를 학습하게 됩니다. 먼저 서비스를 소개한 다음 Amazon VPC의 기능을 살펴보겠습니다. 그런 다음 Amazon VPC 구성 예제를 살펴보고 설명한 기능을 활용해 보겠습니다. 마지막으로 요약을 한 다음 향후 Amazon VPC 학습을 위한 다음 단계를 설명하겠습니다.
 

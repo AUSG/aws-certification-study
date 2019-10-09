@@ -1,9 +1,7 @@
 ---
-id: doc4
+id: script3
 title: Amazon Elastic Block Store(Amazon EBS)
 ---
-
-## Amazon Elastic Block Store(Amazon EBS)
 
 Amazon Elastic Block Store(Amazon EBS) 소개 동영상을 시청해 주셔서 감사합니다. 저는 AWS Training and Certifications 팀의 Rafael Lopes입니다. 팀의 일원으로서 저는 이 동영상과 같은 독점 교육 콘텐츠를 개발 및 제공하는 역할을 맡고 있습니다. 이 짧은 동영상 속에서 데모를 통해 Amazon EBS 서비스를 소개하겠습니다. 시작하겠습니다. EBS 볼륨은 Amazon EC2 인스턴스의 스토리지 단위로 사용될 수 있습니다. 따라서 AWS에서 실행 중인 인스턴스의 디스크 공간이 필요할 때마다 EBS 볼륨을 생각하면 됩니다. 이러한 볼륨은 하드 디스크 또는 SSD 디바이스가 될 수 있습니다. 사용한 만큼만 지불할 수 있고, 볼륨이 더 이상 필요하지 않을 때마다 이를 삭제하여 요금을 지불하지 않을 수 있습니다. EBS 볼륨은 안정성과 가용성을 목표로 설계됩니다. 따라서 볼륨에 있는 데이터는 자동으로 가용 영역에서 실행 중인 여러 서버에 복제됩니다.
 

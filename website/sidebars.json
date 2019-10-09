@@ -5,7 +5,28 @@
       {
         "type": "subcategory",
         "label": "2강 Introduction to the AWS Cloud",
-        "ids": ["2강/doc2", "2강/doc3", "2강/doc4"]
+        "ids": [
+          "2강/script1",
+          "2강/script2",
+          "2강/script3",
+          "2강/script_en",
+          "2강/summary"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "3강 AWS Core Services",
+        "ids": [
+          "3강/script1",
+          "3강/script2",
+          "3강/script3",
+          "3강/script4",
+          "3강/script5",
+          "3강/script6",
+          "3강/script7",
+          "3강/script_en",
+          "3강/summary"
+        ]
       }
     ]
   }
