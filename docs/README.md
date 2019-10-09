@@ -11,7 +11,7 @@ sidebar_label: 소개
 ## 방법
 
 1. 매주 [AWS Cloud Practitioner Essentials](https://www.aws.training/Details/Curriculum?id=27076) 과정 진행
-    1. 1강 Course Introduction(2분), [2강 Introduction to the AWS Cloud(20분)](2강/doc2)
+    1. 1강 Course Introduction(2분), [2강 Introduction to the AWS Cloud(20분)](2강/script1)
     2. 3강 AWS Core Services(45)
     3. 4강 AWS Integrated Services(100)
     4. 5강 AWS Architecture(30)

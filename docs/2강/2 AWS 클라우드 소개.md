@@ -1,5 +1,5 @@
 ---
-id: doc3
+id: script2
 title: AWS 클라우드 소개
 ---
 
