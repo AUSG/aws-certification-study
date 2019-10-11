@@ -174,6 +174,7 @@ class Index extends React.Component {
         .map(user => (
           <a href={user.infoLink} key={user.infoLink}>
             <img src={user.image} alt={user.caption} title={user.caption} />
+            <div>{user.caption}</div>
           </a>
         ));
 
@@ -181,8 +182,8 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
+          <h2>Who are Authors?</h2>
+          <p>This project is written by all these people</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
