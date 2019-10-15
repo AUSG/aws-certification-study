@@ -4,28 +4,28 @@
       "doc1",
       {
         "type": "subcategory",
-        "label": "2강 Introduction to the AWS Cloud",
+        "label": "Module1: Introduction to the AWS Cloud",
         "ids": [
-          "module2/script1",
-          "module2/script2",
-          "module2/script3",
-          "module2/script_en",
-          "module2/summary"
+          "module1/script1",
+          "module1/script2",
+          "module1/script3",
+          "module1/script_en",
+          "module1/summary"
         ]
       },
       {
         "type": "subcategory",
-        "label": "3강 AWS Core Services",
+        "label": "Module2: AWS Core Services",
         "ids": [
-          "module3/script1",
-          "module3/script2",
-          "module3/script3",
-          "module3/script4",
-          "module3/script5",
-          "module3/script6",
-          "module3/script7",
-          "module3/script_en",
-          "module3/summary"
+          "module2/script1",
+          "module2/script2",
+          "module2/script3",
+          "module2/script4",
+          "module2/script5",
+          "module2/script6",
+          "module2/script7",
+          "module2/script_en",
+          "module2/summary"
         ]
       }
     ]
