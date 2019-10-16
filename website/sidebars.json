@@ -27,6 +27,24 @@
           "module2/script_en",
           "module2/summary"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Module3: AWS의 통합형 서비스",
+        "ids": [
+          "module3/script1",
+          "module3/script2",
+          "module3/script3",
+          "module3/script4",
+          "module3/script5",
+          "module3/script6",
+          "module3/script7",
+          "module3/script8",
+          "module3/script9",
+          "module3/script10",
+          "module3/script11",
+          "module3/summary"
+        ]
       }
     ]
   }
