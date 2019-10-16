@@ -11,14 +11,54 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'yoonhoGo',
+    caption: 'Yoonho',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
+    image: 'https://avatars0.githubusercontent.com/u/6959851?s=460&v=4',
     infoLink: 'https://github.com/yoonhoGo',
     pinned: true,
   },
-];
+  {
+    caption: 'Seohyun',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars1.githubusercontent.com/u/35247295?s=460&v=4',
+    infoLink: 'https://github.com/seohyun0120',
+    pinned: true,
+  },
+  {
+    caption: 'Juneseok',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars1.githubusercontent.com/u/29401441?s=460&v=4',
+    infoLink: 'https://github.com/byunjuneseok',
+    pinned: true,
+  },
+  {
+    caption: 'Dongsun',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars3.githubusercontent.com/u/52663248?s=460&v=4',
+    infoLink: 'https://github.com/shindongsun0',
+    pinned: true,
+  },
+  {
+    caption: 'Siyeon Lee',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars0.githubusercontent.com/u/35549653?s=460&v=4',
+    infoLink: 'https://github.com/siyeons',
+    pinned: true,
+  },
+  {
+    caption: 'tinyjin',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars3.githubusercontent.com/u/11167117?s=460&v=4',
+    infoLink: 'https://github.com/tinyjin',
+    pinned: true,
+  },
+]
 
 const siteConfig = {
   title: 'AWS Certification Study', // Title for your website.
@@ -28,7 +68,7 @@ const siteConfig = {
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
-  facebookAppId: "ausgkr",
+  facebookAppId: 'ausgkr',
 
   // Used for publishing and more
   projectName: 'aws-certification-study',
@@ -38,9 +78,7 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-  ],
+  headerLinks: [{ doc: 'doc1', label: 'Docs' }, { page: 'users', label: 'Authors'}],
 
   // If you have users set above, you add it here:
   users,
@@ -102,7 +140,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-    repoUrl: 'https://github.com/ausg/aws-certification-study',
-};
+  repoUrl: 'https://github.com/ausg/aws-certification-study',
+}
 
-module.exports = siteConfig;
+module.exports = siteConfig
