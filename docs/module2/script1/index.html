@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>모듈 소개 · AWS Certification Study</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="모듈 2, 핵심 서비스에 대한 소개를 시작하겠습니다."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="모듈 소개 · AWS Certification Study"/><meta property="og:type" content="website"/><meta property="og:url" content="https://AUSG.github.io/aws-certification-study/"/><meta property="og:description" content="모듈 2, 핵심 서비스에 대한 소개를 시작하겠습니다."/><meta property="og:image" content="https://AUSG.github.io/aws-certification-study/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://AUSG.github.io/aws-certification-study/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/aws-certification-study/img/ausg logo.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/aws-certification-study/js/scrollSpy.js"></script><link rel="stylesheet" href="/aws-certification-study/css/main.css"/><script src="/aws-certification-study/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/aws-certification-study/"><img class="logo" src="/aws-certification-study/img/ausg logo.png" alt="AWS Certification Study"/><h2 class="headerTitleWithLogo">AWS Certification Study</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/aws-certification-study/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/aws-certification-study/users" target="_self">Authors</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Module2: AWS Core Services</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">AWS Cloud Practitioner</h3><ul class=""><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/doc1">소개</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Module1: Introduction to the AWS Cloud</h4><ul><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module1/script1">모듈 소개</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module1/script2">AWS 클라우드 소개</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module1/script3">AWS 인터페이스 소개</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module1/script_en">Introduction to AWS Cloud</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module1/summary">요약</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Module2: AWS Core Services</h4><ul><li class="navListItem navListItemActive"><a class="navItem" href="/aws-certification-study/docs/module2/script1">모듈 소개</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/script2">Amazon Elastic Cloud Compute(EC2)</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/script3">Amazon Elastic Block Store(Amazon EBS)</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/script4">Amazon Simple Storage Service(S3)</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/script5">AWS 글로벌 인프라</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/script6">Virtual Private Cloud(VPC)</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/script7">AWS 보안 그룹</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/script_en">AWS Core Services</a></li><li class="navListItem"><a class="navItem" href="/aws-certification-study/docs/module2/summary">요약</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">모듈 소개</h1></header><article><div><span><p>모듈 2, 핵심 서비스에 대한 소개를 시작하겠습니다.</p>
+<p>이 모듈은 여러 AWS 클라우드 서비스에 대한 대략적인 정보를 제공하는 동영상들로 구성됩니다. 내용을 더 쉽게 이해할 수 있도록 핵심 서비스는 각각의 동영상에서 논의하겠습니다.</p>
+<p>모든 관련 동영상을 시청해야 합니다. 이 모듈을 완료하면 AWS 서비스 및 관련 일반 사용 사례를 설명할 수 있습니다.</p>
+<p>이제 시작하겠습니다.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/aws-certification-study/docs/module1/summary"><span class="arrow-prev">← </span><span>요약</span></a><a class="docs-next button" href="/aws-certification-study/docs/module2/script2"><span>Amazon Elastic Cloud Compute(EC2)</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/aws-certification-study/" class="nav-home"><img src="/aws-certification-study/img/ausg logo.png" alt="AWS Certification Study" width="66" height="58"/></a><div><h5>Docs</h5><a href="/aws-certification-study/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/aws-certification-study/docs/en/script1.html">Guides (or other categories)</a><a href="/aws-certification-study/docs/en/script2.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/aws-certification-study/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/ausg/aws-certification-study">GitHub</a><a class="github-button" href="https://github.com/ausg/aws-certification-study" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><div class="fb-like" data-href="https://AUSG.github.io" data-colorscheme="dark" data-layout="standard" data-share="true" data-width="225" data-show-faces="false"></div></div></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/aws-certification-study/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 @ausg</section></footer></div><script>window.fbAsyncInit = function() {FB.init({appId:'ausgkr',xfbml:true,version:'v2.7'});};(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = '//connect.facebook.net/en_US/sdk.js';fjs.parentNode.insertBefore(js, fjs);}(document, 'script','facebook-jssdk'));
+                </script></body></html>
