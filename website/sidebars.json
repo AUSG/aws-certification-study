@@ -45,6 +45,17 @@
           "module3/script11",
           "module3/summary"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Module4: AWS 아키텍처",
+        "ids": [
+          "module4/script1",
+          "module4/script2",
+          "module4/script3",
+          "module4/script4",
+          "module4/summary"
+        ]
       }
     ]
   }
