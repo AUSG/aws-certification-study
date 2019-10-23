@@ -48,7 +48,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: 'https://avatars0.githubusercontent.com/u/35549653?s=460&v=4',
     infoLink: 'https://github.com/siyeons',
-    pinned: true,
+    pinned: false,
   },
   {
     caption: 'tinyjin',
@@ -64,7 +64,23 @@ const users = [
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: 'https://avatars0.githubusercontent.com/u/26738287?s=460&v=4',
     infoLink: 'https://github.com/sangyeol-kim',
-    pinned: true,
+    pinned: false,
+  },
+  {
+    caption: '고명진, Ray',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars2.githubusercontent.com/u/24822072?s=460&v=4',
+    infoLink: 'https://github.com/rayleighko',
+    pinned: false,
+  },
+  {
+    caption: 'Roeniss Moon',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars2.githubusercontent.com/u/26613280?s=460&v=4',
+    infoLink: 'https://github.com/roeniss',
+    pinned: false,
   },
 ]
 
