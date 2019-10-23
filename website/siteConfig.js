@@ -58,6 +58,14 @@ const users = [
     infoLink: 'https://github.com/tinyjin',
     pinned: true,
   },
+  {
+    caption: 'sangyeol-kim',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: 'https://avatars0.githubusercontent.com/u/26738287?s=460&v=4',
+    infoLink: 'https://github.com/sangyeol-kim',
+    pinned: true,
+  },
 ]
 
 const siteConfig = {
