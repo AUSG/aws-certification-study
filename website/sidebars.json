@@ -56,6 +56,20 @@
           "module4/script4",
           "module4/summary"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Module5: AWS 보안",
+        "ids": [
+          "module5/script1",
+          "module5/script2",
+          "module5/script3",
+          "module5/script4",
+          "module5/script5",
+          "module5/script6",
+          "module5/script7",
+          "module5/summary"
+        ]
       }
     ]
   }
