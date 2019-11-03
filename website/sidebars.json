@@ -27,6 +27,49 @@
           "module2/script_en",
           "module2/summary"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Module3: AWS의 통합형 서비스",
+        "ids": [
+          "module3/script1",
+          "module3/script2",
+          "module3/script3",
+          "module3/script4",
+          "module3/script5",
+          "module3/script6",
+          "module3/script7",
+          "module3/script8",
+          "module3/script9",
+          "module3/script10",
+          "module3/script11",
+          "module3/summary"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Module4: AWS 아키텍처",
+        "ids": [
+          "module4/script1",
+          "module4/script2",
+          "module4/script3",
+          "module4/script4",
+          "module4/summary"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Module5: AWS 보안",
+        "ids": [
+          "module5/script1",
+          "module5/script2",
+          "module5/script3",
+          "module5/script4",
+          "module5/script5",
+          "module5/script6",
+          "module5/script7",
+          "module5/summary"
+        ]
       }
     ]
   }

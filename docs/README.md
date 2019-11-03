@@ -11,13 +11,13 @@ sidebar_label: 소개
 ## 방법
 
 1. 매주 [AWS Cloud Practitioner Essentials](https://www.aws.training/Details/Curriculum?id=27076) 과정 진행
-    1. 1강 Course Introduction(2분), [2강 Introduction to the AWS Cloud(20분)](module1/script1)
-    2. [3강 AWS Core Services(45)](module2/script1)
-    3. 4강 AWS Integrated Services(100)
-    4. 5강 AWS Architecture(30)
-    5. 6강 AWS Security(50)
-    6. 7강 Pricing and Support(30)
-    7. 8강 Course Summary(1), 9강 Final Course Knowledge Check(30)
+    1. M0: Course Introduction(2분), [M1: Introduction to the AWS Cloud(20분)](./blob/master/docs/module1/1%20모듈%20소개.md)
+    2. [M2: AWS Core Services(45)](./blob/master/docs/module2/1%20모듈%20소개.md)
+    3. [M3: AWS Integrated Services(100)](./blob/master/docs/module3/1%20모듈%20소개.md)
+    4. [M4: AWS Architecture(30)](./blob/master/docs/module4/1%20모듈%20소개.md)
+    5. M5: AWS Security(50)
+    6. M6: Pricing and Support(30)
+    7. M7: Course Summary(1)
 2. [깃헙 레포](https://github.com/AUSG/aws-certification-study)에 내용을 정리(다 받아 적을 필요 없음)
 3. 11월 시험 응시
 
