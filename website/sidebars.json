@@ -70,6 +70,18 @@
           "module5/script7",
           "module5/summary"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Module6: 요금 및 지원",
+        "ids": [
+          "module6/script1",
+          "module6/script2",
+          "module6/script3",
+          "module6/script4",
+          "module6/script5",
+          "module6/summary"
+        ]
       }
     ]
   }
